@@ -12,3 +12,7 @@ class Transaction(models.Model):
 	sender = models.TextField()
 	reciever = models.TextField()
 	amount = models.IntegerField()
+
+class Message(models.Model):
+	content = models.TextField()
+	reciever = models.TextField()
