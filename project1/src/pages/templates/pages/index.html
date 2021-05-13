@@ -47,7 +47,6 @@
 
         <h3>Send a message to your friends!</h3>
         <form id='message' action='message/' method="POST">
-            {% csrf_token %}
             <span>To:</span><br/>
             <select name="to">
 			{% for account in accounts %}
